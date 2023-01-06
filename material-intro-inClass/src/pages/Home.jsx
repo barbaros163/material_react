@@ -1,6 +1,8 @@
 import { ThemeProvider } from "@emotion/react";
 import { createTheme } from "@mui/material";
 import { teal } from "@mui/material/colors";
+import AppbarComp from "../components/AppbarComp";
+import CardGrid from "../components/CardGrid";
 import TextFieldComp from "../components/TextFieldComp";
 import TypoButtons from "../components/TypoButtons";
 
@@ -21,6 +23,8 @@ const Home = () => {
     <ThemeProvider theme={theme}>
       <TypoButtons />
       <TextFieldComp />
+      <CardGrid />
+      <AppbarComp />
     </ThemeProvider>
   );
 };
