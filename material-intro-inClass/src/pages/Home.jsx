@@ -1,5 +1,4 @@
-import { ThemeProvider } from "@emotion/react";
-import { createTheme } from "@mui/material";
+import { createTheme, ThemeProvider } from "@mui/material";
 import { teal } from "@mui/material/colors";
 import AppbarComp from "../components/AppbarComp";
 import CardGrid from "../components/CardGrid";
@@ -21,10 +20,10 @@ const Home = () => {
   });
   return (
     <ThemeProvider theme={theme}>
+      <AppbarComp />
       <TypoButtons />
       <TextFieldComp />
       <CardGrid />
-      <AppbarComp />
     </ThemeProvider>
   );
 };
